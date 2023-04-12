@@ -2,10 +2,10 @@
 
 ## Insert loader
 * Create loader script in public directory.
-In this example it is [./public/admixer-header-script.js](./public/admixer-header-script.js).
-Content of your loader you can take from [Admixer interface](https://admixer.com).
+Example: [./public/admixer-header-script.js](./public/admixer-header-script.js).
+Content of your loader you can take from [Admixer interface](https://platform.admixer.net/).
 * load it into page.
-In this example script loaded in [./src/pages/_document.tsx](./src/pages/_document.tsx)
+Example: [./src/pages/_document.tsx](./src/pages/_document.tsx)
 ```tsx 
 {/* it is important to be sure that script loaded only once. */}
 <Script src={"/admixer-header-script.js"} strategy={"afterInteractive"} />
